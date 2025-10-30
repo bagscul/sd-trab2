@@ -6,7 +6,7 @@ import java.io.IOException;
 public class NatsConsumer {
     public static void main(String[] args) {
         try {
-            Connection nc = Nats.connect("nats://<IP_NATS>:4222");
+            Connection nc = Nats.connect("nats://192.168.0.1:4222");
             System.out.println("[NATS] Conectado e aguardando mensagens...");
 
             Dispatcher d = nc.createDispatcher((msg) -> {
