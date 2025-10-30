@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
 public class ECommerceClient {
     public static void main(String[] args) {
         try {
-            String rmiHost = (args.length > 0) ? args[0] : "localhost";
+            String rmiHost = (args.length > 0) ? args[0] : "192.168.0.2";
             int threads = (args.length > 1) ? Integer.parseInt(args[1]) : 3;
             int duracao = (args.length > 2) ? Integer.parseInt(args[2]) : 20;
 
