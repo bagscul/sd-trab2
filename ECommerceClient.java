@@ -4,7 +4,7 @@ import java.rmi.registry.Registry;
 public class ECommerceClient {
     public static void main(String[] args) {
         try {
-            Registry registry = LocateRegistry.getRegistry("<IP_SERVIDOR_RPC>", 1099);
+            Registry registry = LocateRegistry.getRegistry("192.168.0.2", 1099);
             ECommerce stub = (ECommerce) registry.lookup("ECommerceService");
 
             String produto = "Notebook";
